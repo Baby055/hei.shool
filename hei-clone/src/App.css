@@ -142,6 +142,7 @@
   display: flex;
   flex-direction: column;
   height: auto;
+  margin-top: 70px;
 }
 
 .img2 {
@@ -511,6 +512,7 @@ text-align: left;
 .langage-container {
   font-family: Arial, sans-serif;
   padding: 20px;
+  height: 90vh;
   /* background: #f5f5f5; */
 }
 
@@ -586,6 +588,7 @@ text-align: left;
   background: #f5f7fb;
   text-align: center;
   color: #333;
+  margin-bottom: 50px;
 }
 
 .partenaires-section h2 {
@@ -629,3 +632,96 @@ text-align: left;
 .logo-box:hover {
   transform: scale(1.05);
 }
+
+.b9_title {
+  font-size: 3rem;
+  color: #333;
+}
+
+/* =========== */
+.container_b10 {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  background-color: #001948;
+  font-family: Arial, sans-serif;
+  width: 100%;
+  height: auto;
+  margin : 0 auto;
+}
+
+.g1 {
+  flex: 1;
+  padding: 0 1rem;
+  color: white;
+  margin-left: 100px;
+}
+
+.Logo_hei2 {
+  max-width: 100px;
+  height: 100px;
+  margin-bottom: 1rem;
+}
+
+.title_g1 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.p_g1, .nav-list {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: white;
+}
+
+.nav-list{
+  list-style-type: none;
+  padding: 0;
+}
+
+.ok{
+  margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  color: white;
+}
+
+.lien{
+  text-decoration: none;
+  color: white;
+}
+
+.lien:hover {
+  color: #DFA408;
+}
+
+.social-icons {
+  display: flex;
+  gap: 2rem;
+  font-size: 2rem;
+  margin-left: 10px;
+  margin-top: 10px;
+  color: #DFA408;
+}
+
+.social-icons i {
+  cursor: pointer;
+}
+
+.social-icons i:hover {
+  color: #000;
+}
+
+/* Footer text */
+/* .container_b10::after {
+  content: "© HEL Madagascar";
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid #ddd;
+  color: #555;
+  font-size: 0.8rem;
+} */

@@ -3,6 +3,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faGraduationCap } from '@fortawesome/free-solid-svg-icons'
 import { faUsers } from '@fortawesome/free-solid-svg-icons'
 import { faMedal } from '@fortawesome/free-solid-svg-icons'
+import { faFacebook, faLinkedin, faInstagram } from '@fortawesome/free-brands-svg-icons';
+
 
  function Headers() {
     return (
@@ -321,22 +323,22 @@ function Body8 (){
 }
 function Body9 () {
   const partenaires = [
-  { name: "NXTA", logo: "/logos/nxta.png" },
-  { name: "Passerelles Numériques", logo: "/logos/pn.png" },
-  { name: "Yooz", logo: "/logos/yooz.png" },
-  { name: "Etech", logo: "/logos/etech.png" },
-  { name: "EMIT", logo: "/logos/emit.png" },
-  { name: "Numer", logo: "/logos/numer.png" },
-  { name: "Partners", logo: "/logos/partners.png" },
-  { name: "YouthFactory", logo: "/logos/yf.png" },
-  { name: "Kante", logo: "/logos/kante.png" },
+  { name: "NXTA", logo: "./Assets/LOGO-NEXTA.webp" },
+  { name: "Passerelles Numériques", logo: "./Assets/PN_Logo_baseline_color_ENG.png" },
+  { name: "Yooz", logo: "./Assets/Yooz-2023-Logo-2.webp" },
+  { name: "Etech", logo: "./Assets/logo-etech.png" },
+  { name: "EMIT", logo: "./Assets/logo_emit.png" },
+  { name: "Numer", logo: "./Assets/Logo-Numer-vf.png" },
+  { name: "Partners", logo: "./Assets/bp-logo-full-1024x331.webp" },
+  { name: "YouthFactory", logo: "./Assets/YIF_LOGO_512x512_BL_on_WH-1.webp" },
+  { name: "Kante", logo: "./Assets/logo-kante-company-1.png" },
 ];
 
 
   return (
     <section className="partenaires-section">
-      <h2>Nos partenaires</h2>
-      <p>
+      <h2 className='b9_title'>Nos partenaires</h2>
+      <p className='p'>
         L’employabilité de nos étudiants se base sur la pertinence de notre
         programme pédagogique et de la composition de notre corps enseignant
         mais aussi du soutien et la collaboration des entreprises partenaires.
@@ -353,7 +355,49 @@ function Body9 () {
 
 }
 
-
+function Body10 () {
+  return <>
+    <div>
+      <div className="container_b10">
+        <div className="g1">
+          <img src="./Assets/Logo-e1662790239183.png" alt="Logo" className='Logo_hei2'/>
+          <br />
+          <p className='p_g1'>Formation habilitée par l’Etat suivant le système LMD</p>
+          <br />
+          <p className='p_g1'>Habilitation MESupRes n°31309/2023</p>
+        </div>
+        <div className="g1">
+          <h3 className='title_g1'>Adresse</h3>
+          <br />
+          <p className='p_g1'>
+            II J 161 R Ambodivoanjo 
+            <br />
+            Ivandry Antananarivo
+            <br />
+            101, Madagascar
+          </p>
+        </div>
+        <div className="g1">
+          <h3 className='title_g1'>Navigation</h3>
+          <br />
+          <ul className='nav-list'>
+            <li className='ok'><a href="#" className='lien'>Acceuil</a></li>
+            <li className='ok'><a href="#" className='lien'>Actualités</a></li>
+            <li className='ok'><a href="#" className='lien'>Bourse d'études</a></li>
+          </ul>
+        </div>
+        <div className='g1'>
+          <h3>Médias Sociaux</h3>
+          <div className='social-icons'>
+            <i><FontAwesomeIcon icon={faFacebook} /></i>
+            <i><FontAwesomeIcon icon={faLinkedin} /></i>
+            <i><FontAwesomeIcon icon={faInstagram} /></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </>
+}
 function App() {
   return <>
     <Headers />
@@ -366,7 +410,7 @@ function App() {
     <Body7 />
     <Body8 />
     <Body9 />
-    <Body 10/>
+    <Body10 />
   </>
 }
 
